@@ -1,4 +1,5 @@
-import 'package:chat_app/features/login/presentation/view/widget/custom_text_from_field.dart';
+import 'package:chat_app/constants.dart';
+import 'package:chat_app/core/widget/logo_app.dart';
 import 'package:flutter/material.dart';
 
 class LoginViewBody extends StatelessWidget {
@@ -6,8 +7,16 @@ class LoginViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomTextFromField(
-      hintText: 'email',
+    return const Center(
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: kPrimaryPadding),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            LogoApp(),
+          ],
+        ),
+      ),
     );
   }
 }
