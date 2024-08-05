@@ -16,12 +16,7 @@ class LoginText extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            Future.delayed(
-              const Duration(seconds: 2),
-              () {
-                GoRouter.of(context).pop();
-              },
-            );
+            GoRouter.of(context).pop();
           },
           child: Text(
             'Go Login',

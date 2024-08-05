@@ -17,12 +17,7 @@ class RegisterText extends StatelessWidget {
         ),
         GestureDetector(
           onTap: () {
-            Future.delayed(
-              const Duration(seconds: 2),
-              () {
-                GoRouter.of(context).push(AppRouter.kRegisterView);
-              },
-            );
+            GoRouter.of(context).push(AppRouter.kRegisterView);
           },
           child: Text(
             'Go Register',
