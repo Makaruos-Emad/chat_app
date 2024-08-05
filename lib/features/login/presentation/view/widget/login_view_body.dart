@@ -1,5 +1,6 @@
 import 'package:chat_app/constants.dart';
 import 'package:chat_app/core/widget/logo_app.dart';
+import 'package:chat_app/features/login/presentation/view/widget/login_section.dart';
 import 'package:flutter/material.dart';
 
 class LoginViewBody extends StatelessWidget {
@@ -14,6 +15,10 @@ class LoginViewBody extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             LogoApp(),
+            SizedBox(
+              height: 70,
+            ),
+            LoginSection(),
           ],
         ),
       ),

@@ -1,4 +1,3 @@
-import 'package:chat_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class SlidingText extends StatelessWidget {
