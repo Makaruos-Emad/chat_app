@@ -1,5 +1,7 @@
+import 'package:chat_app/core/utils/app_router.dart';
 import 'package:chat_app/features/splash/presentation/view/widget/sliding_text.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -16,6 +18,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
   @override
   void initState() {
     initSlidingAnimation();
+    navigateToLogin();
     super.initState();
   }
 
@@ -44,5 +47,14 @@ class _SplashViewBodyState extends State<SplashViewBody>
       end: Offset.zero,
     ).animate(animationController);
     animationController.forward();
+  }
+
+  void navigateToLogin() {
+    Future.delayed(
+      const Duration(seconds: 2),
+      () {
+        GoRouter.of(context).push(AppRouter.kLoginView);
+      },
+    );
   }
 }
