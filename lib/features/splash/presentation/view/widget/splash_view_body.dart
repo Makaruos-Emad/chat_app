@@ -1,6 +1,7 @@
 import 'package:chat_app/core/utils/app_router.dart';
 import 'package:chat_app/features/splash/presentation/view/widget/sliding_text.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -31,8 +32,17 @@ class _SplashViewBodyState extends State<SplashViewBody>
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: SlidingText(
-        slidingAnimation: slidingAnimation,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Icon(
+            FontAwesomeIcons.solidComments,
+            size: 100,
+          ),
+          SlidingText(
+            slidingAnimation: slidingAnimation,
+          ),
+        ],
       ),
     );
   }

@@ -19,7 +19,6 @@ class SlidingText extends StatelessWidget {
           child: const Text(
             'Chat App',
             style: TextStyle(
-              color: kPrimaryColor,
               fontSize: 50,
             ),
           ),
