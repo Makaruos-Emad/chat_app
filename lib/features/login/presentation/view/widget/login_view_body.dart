@@ -1,3 +1,4 @@
+import 'package:chat_app/features/login/presentation/view/widget/custom_text_from_field.dart';
 import 'package:flutter/material.dart';
 
 class LoginViewBody extends StatelessWidget {
@@ -5,6 +6,8 @@ class LoginViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return CustomTextFromField(
+      hintText: 'email',
+    );
   }
 }

@@ -12,6 +12,7 @@ class ChatApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
       routerConfig: AppRouter.router,
     );
   }
