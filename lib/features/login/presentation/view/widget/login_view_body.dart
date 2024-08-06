@@ -1,4 +1,5 @@
 import 'package:chat_app/constants.dart';
+import 'package:chat_app/core/widget/custom_button.dart';
 import 'package:chat_app/core/widget/logo_app.dart';
 import 'package:chat_app/features/login/presentation/view/widget/login_section.dart';
 import 'package:chat_app/features/login/presentation/view/widget/register_text.dart';
@@ -15,6 +16,9 @@ class LoginViewBody extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(
+              height: 100,
+            ),
             LogoApp(),
             SizedBox(
               height: 70,
@@ -24,6 +28,12 @@ class LoginViewBody extends StatelessWidget {
               height: 30,
             ),
             RegisterText(),
+            SizedBox(
+              height: 100,
+            ),
+            CustomButton(
+              text: 'Login',
+            ),
           ],
         ),
       ),

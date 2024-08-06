@@ -9,9 +9,7 @@ class LoginView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: kPrimaryColor,
-      body: SafeArea(
-        child: LoginViewBody(),
-      ),
+      body: LoginViewBody(),
     );
   }
 }
