@@ -1,5 +1,6 @@
 import 'package:chat_app/constants.dart';
 import 'package:chat_app/features/home/presentation/view/widget/home_view_app_bar.dart';
+import 'package:chat_app/features/home/presentation/view/widget/user_list_view.dart';
 import 'package:flutter/material.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -12,6 +13,10 @@ class HomeViewBody extends StatelessWidget {
       child: Column(
         children: [
           HomeViewAppBar(),
+          SizedBox(
+            height: 10,
+          ),
+          UserListView(),
         ],
       ),
     );
