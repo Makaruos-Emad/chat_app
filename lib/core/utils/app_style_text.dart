@@ -8,4 +8,8 @@ abstract class StyleText {
     fontSize: 50,
     color: Colors.white,
   );
+  static const style30 = TextStyle(
+    fontSize: 30,
+    color: Colors.white,
+  );
 }
