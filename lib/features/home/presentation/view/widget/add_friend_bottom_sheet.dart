@@ -1,3 +1,4 @@
+import 'package:chat_app/features/home/presentation/view/widget/add_friend.dart';
 import 'package:flutter/material.dart';
 
 class AddFriendBottomSheet extends StatelessWidget {
@@ -14,7 +15,7 @@ class AddFriendBottomSheet extends StatelessWidget {
             right: 16,
             bottom: MediaQuery.of(context).viewInsets.bottom),
         child: const SingleChildScrollView(
-          child: Column(),
+          child: AddNewFriend(),
         ),
       ),
     );

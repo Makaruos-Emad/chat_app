@@ -8,13 +8,19 @@ class ChatViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        ChatViewAppBar(),
-        ChatBuble(),
-        ChatBubleForFriend(),
+        const ChatViewAppBar(),
+        const ChatBuble(),
+        const ChatBubleForFriend(),
         CustomTextField(
           hintText: 'Message',
+          suffixIcon: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.send,
+            ),
+          ),
         ),
       ],
     );

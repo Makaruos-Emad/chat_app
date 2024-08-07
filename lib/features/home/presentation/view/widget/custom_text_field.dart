@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key, required this.hintText, this.onSubmitted});
+  const CustomTextField(
+      {super.key, required this.hintText, this.onSubmitted, this.suffixIcon});
 
   final String hintText;
   final void Function(String?)? onSubmitted;
+  final Widget? suffixIcon;
   @override
   Widget build(BuildContext context) {
     return TextField(
@@ -13,12 +15,7 @@ class CustomTextField extends StatelessWidget {
       minLines: 1,
       onSubmitted: onSubmitted,
       decoration: InputDecoration(
-        suffixIcon: IconButton(
-          onPressed: () {},
-          icon: const Icon(
-            Icons.send,
-          ),
-        ),
+        suffixIcon: suffixIcon,
         hintText: hintText,
         border: textFiledBorderDecoration(),
         enabledBorder: textFiledBorderDecoration(),
