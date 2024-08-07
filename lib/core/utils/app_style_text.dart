@@ -17,4 +17,8 @@ abstract class StyleText {
     color: Colors.white,
     fontWeight: FontWeight.w200,
   );
+  static const style20 = TextStyle(
+    fontSize: 20,
+    color: Colors.white,
+  );
 }
